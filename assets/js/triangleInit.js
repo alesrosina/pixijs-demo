@@ -26,7 +26,7 @@ function triangleInit(width, height, x, y, videoUrl, imageUrl, bgClass, title) {
 
   var tween = PIXI.tweenManager.createTween(triangleContainer);
   tween.path = path;
-  tween.time = 13000;
+  tween.time = 30000;
   tween.easing = PIXI.tween.Easing.linear();
   //tween.pathReverse  =true;
   tween.loop = true;
@@ -77,6 +77,13 @@ function triangleInit(width, height, x, y, videoUrl, imageUrl, bgClass, title) {
     });
     tween2.time = ANIMATION_TIME;
     tween2.start();
+
+    if(!item_clicked) {
+      tween.stop();
+    }
+    else {
+      tween.start();
+    }
 
     item_clicked = !item_clicked;
   };

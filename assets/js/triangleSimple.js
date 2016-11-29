@@ -24,7 +24,7 @@ function triangleSimple(width, height) {
 
   var tween = PIXI.tweenManager.createTween(triangleContainer);
   tween.path = path;
-  tween.time = 13000;
+  tween.time = 30000;
   tween.easing = PIXI.tween.Easing.linear();
   tween.loop = true;
   tween.start();
