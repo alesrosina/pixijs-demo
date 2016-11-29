@@ -10,13 +10,8 @@ function triangleSimple(width, height) {
   triangleContainer.alpha = ALPHA_OFF;
   triangleContainer.width = width;
   triangleContainer.height = height;
-  //triangleContainer.x = x;
-  //triangleContainer.y = y;
-  //triangleContainer.hitArea = new PIXI.Polygon(arr);
-  //triangleContainer.interactive = true;
 
   //animating object
-
   var path = new PIXI.tween.TweenPath();
   path.moveTo(window.innerWidth * Math.random() - width, window.innerHeight * Math.random() - height);
   path.arcTo(350, 200, 450, window.innerWidth * Math.random() - width, window.innerHeight * Math.random() - height);
